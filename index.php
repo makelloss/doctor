@@ -1,14 +1,7 @@
 <?php
 $b = 37.7;
 $a = rand(330, 420)/10;
-
+//$a = 37.7;
 //echo round ($a);
-if ($a > $b) {
-    echo "<span style = \" color: red;\">Болен!</span>";
-} elseif ($a == $b) {
-    echo "<span style = \" color: orange;\">Что-то нездоровится…</span>";
-} else {
-    echo "<span style = \" color: green;\">Здоров!</span>";
-}
-//echo ($x >=36.7 ) ? "<span style = \" color: green;\">Здоров!</span>" : "<span style = \" color: red;\">Болен!</span>"; 
+echo ($a >$b ? "<span style = \" color: red;\">Болен!</span>" : ($a ==$b ? "<span style = \" color: orange;\">Что-то нездоровится…</span>": "<span style = \" color: green;\">Здоров!</span>")); 
 ?>
